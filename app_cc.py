@@ -39,7 +39,7 @@ st.markdown(
 
 
 selected = option_menu(
-            None, [ "World Cup", "Lower Cup"],
+            None, [ "Cross Country", "Lower Cup"],
             icons=["trophy-fill", "trophy"],
             orientation= "horizontal",
             styles={
@@ -49,8 +49,8 @@ selected = option_menu(
                 "nav-link-selected": {"background-color": "rgba(0, 104, 201, 0.5)", "font-weight": "normal", "color": "white"},
             })
 
-#------------------------------------------------------------WORLD CUP------------------------------------------------------------
-if selected == "World Cup":
+#------------------------------------------------------------Cross Country------------------------------------------------------------
+if selected == "Cross Country":
 
     ### INITIALIZE SESSION STATE ###
 
@@ -61,7 +61,7 @@ if selected == "World Cup":
 
     ### PAGE CONTENT ###
 
-    st.title('Results Alpine Skiing World Cup')
+    st.title('Results Cross Country')
 
     df, athletes_unique, seasons_unique, description_unique = get_results_WC()
 
