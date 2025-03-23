@@ -5,7 +5,7 @@ from google.oauth2 import service_account
 from google.cloud import bigquery
 
     
-def load_datapool(query):
+'''def load_datapool(query):
     
     credentials = service_account.Credentials.from_service_account_info(st.secrets["gbq_service_account"])
     client = bigquery.Client(credentials=credentials, project=credentials.project_id)
@@ -15,7 +15,7 @@ def load_datapool(query):
     rows = [dict(row) for row in rows_raw]
     return pd.DataFrame(rows)
 
-
+'''
 
 ### WORLD CUP ###
 
