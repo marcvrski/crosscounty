@@ -39,7 +39,7 @@ st.markdown(
 
 
 selected = option_menu(
-            None, [ "Cross Country", "Lower Cup"],
+            None, [ "Cross Country"],
             icons=["trophy-fill", "trophy"],
             orientation= "horizontal",
             styles={
